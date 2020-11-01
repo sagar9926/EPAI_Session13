@@ -57,4 +57,4 @@ class CustomPolygon :
         return efficiency.index(max_efficiency) + 3
     
     def __repr__(self):
-        return f'CustomPolygon(MaximumEdge = {self.edges}, Circum Radius = {self.circum_rad})'
+        return f'CustomPolygon(MaximumEdge = {self.max_edges}, Circum Radius = {self.common_circum_radius})'
