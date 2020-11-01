@@ -2,6 +2,20 @@ import math
 
 class Polygon :
     
+    """
+    Creates a polygon with specified number of vertices and circum radius.
+        
+            Parameters : 
+                number_edges : Number of edges/vertices of polygon
+                circum_radius : Circum radius of polygon
+            Returns : 
+                interiorAngle=(n−2)⋅180n 
+                edgeLength,s=2⋅R⋅sin(πn)
+                apothem,a=R⋅cos(πn)
+                area=12⋅n⋅s⋅a
+                perimeter=n⋅s
+    """
+    
     def __init__(self,number_edges,circum_radius):
         self.edges = number_edges
         self.circum_rad = circum_radius
