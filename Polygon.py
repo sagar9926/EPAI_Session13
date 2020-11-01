@@ -22,24 +22,24 @@ class Polygon :
         
     @property
     def edges(self):
-        print("Getting Edges...")
+        #print("Getting Edges...")
         return self._number_edges
     
     @edges.setter
     def edges(self,number_edges):
-        print("Setting edges value...")
+        #print("Setting edges value...")
         if number_edges < 3:
             raise ValueError("Minimum number of edges required to form a polygon is 3")
         self._number_edges = number_edges
         
     @property
     def circum_rad(self):
-        print("Getting Cirum radius ...")
+        #print("Getting Cirum radius ...")
         return self._circum_rad
     
     @circum_rad.setter
     def circum_rad(self,circum_radius):
-        print("Setting circum radius value...")
+        #print("Setting circum radius value...")
         if circum_radius < 0:
             raise ValueError("Cirum radius cannot be negative")
         self._circum_rad = circum_radius
