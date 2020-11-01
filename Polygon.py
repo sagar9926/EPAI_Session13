@@ -9,11 +9,11 @@ class Polygon :
                 number_edges : Number of edges/vertices of polygon
                 circum_radius : Circum radius of polygon
             Returns : 
-                interiorAngle=(n−2)⋅180n 
-                edgeLength,s=2⋅R⋅sin(πn)
-                apothem,a=R⋅cos(πn)
-                area=12⋅n⋅s⋅a
-                perimeter=n⋅s
+                interiorAngle=(n−2)*180/n 
+                edgeLength,s=2*R*sin(π/n)
+                apothem,a=R*cos(π/n)
+                area=1/2*n*s*a
+                perimeter=n*s
     """
     
     def __init__(self,number_edges,circum_radius):
