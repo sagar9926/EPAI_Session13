@@ -3,6 +3,15 @@ from functools import lru_cache
 
 
 class CustomPolygon :
+    """
+    Creates custom polygon sequence starting from number of vertices = 3 till the maximum specified number of vertices and common circum radius.
+            Parameters : 
+                max_edges : Maximum number of edges/vertices of polygon in sequence
+                common_circum_radius : Circum radius of polygon
+            Returns : 
+                efficiency : List comprising efficiency values (area/perimeter) for all the polygons in sequence
+                max_efficiency : Returns the Polygon with the highest area : perimeter ratio
+    """
     
     def __init__(self,max_edges,common_circum_radius):
         self.max_edges = max_edges
