@@ -45,7 +45,7 @@ class CustomPolygon :
     def _efficiency(edges,common_circum_radius):
         area = 0.5 * edges * CustomPolygon._edgeLength(common_circum_radius,edges) * CustomPolygon._apothem(common_circum_radius,edges)
         perimeter = edges * CustomPolygon._edgeLength(common_circum_radius,edges)
-        print(f"Edges {edges}, Area {area} , Perimeter {perimeter}")
+        #print(f"Edges {edges}, Area {area} , Perimeter {perimeter}")
         return (area/perimeter)
     
     @property
